@@ -1,0 +1,259 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	color: #666;
+}
+
+/* Bloques Principales */
+
+.container{
+	width: 100%;
+	max-width: 896px;
+	margin: 0 auto;
+}
+
+/* Main Header */
+
+
+/* -Top Header */
+
+.top-header{
+	height: 36px;
+	background: #253444;
+}
+
+.top-header .telefono{
+	line-height: 36px;
+	color: white;
+	padding: 0;
+	background: url(../img/phone_icon.png) .5em 6px no-repeat;
+	width: 128px;
+	text-align: right;
+	color: #4C5A67;
+}
+ 
+/* --Social Media Header */
+
+.social-media-header{
+	margin: 0;
+	list-style: none;
+}
+
+.social-media-header li{
+	display: block;
+	float: left;
+}
+
+.social-media-header a{
+	display: block;
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+	margin: 7px .5em;
+	background: url(../img/social_media.png);
+}
+
+.social-media-header a.twitter{
+	background: url(../img/social_media.png) -22px 0 no-repeat;
+}
+
+.social-media-header a.twitter:hover{
+	background: url(../img/social_media.png) -22px -22px no-repeat;
+}
+
+.social-media-header a.facebook:hover{
+	background: url(../img/social_media.png) 0 -22px no-repeat;
+}
+
+/* -Header Main */
+
+.main-header{
+	height: 96px;
+	background: #2C3E50;
+}
+
+h1.logo{
+	width: 146px;
+	height: 72px;
+	padding: 12px 0;
+	background: url(../img/logo.png) 0 12px no-repeat;
+	text-indent: -9999px;
+}
+
+.main-menu{
+	margin: 0;
+}
+
+.main-menu li{
+	display: block;
+	float: left;
+	margin: 0 .25em;
+}
+
+.main-menu a{
+	color: #97aec3;
+	display: block;
+	height: 96px;
+	padding: 0 1em;
+	line-height: 96px;
+	font-size: 1em;
+}
+
+.main-menu a:hover{
+	background: #253444;
+	color: #fefefe;
+}
+
+.main-menu a.selected{
+	color: #1abc9c;
+}
+
+
+/* Slider */
+
+.slider{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#slider img{
+	width: 100;
+}
+
+
+/* Footer Main */
+footer.main{
+	background: #2C3E50;
+	margin-top: 2em;
+	padding: 2em 0;
+	color: #97aec3;
+}
+
+.main-footer h3{
+	color: #fefefe;
+}
+
+/* Social Media Footer */
+
+.social-media-footer{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+.social-media-footer li{
+	display: block;
+	float: left;
+}
+
+.social-media-footer a{
+	display: block;
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+	margin: 7px .5em;
+	background: url(../img/social_media.png);
+}
+
+.social-media-footer a.twitter{
+	background: url(../img/social_media.png) -22px 0 no-repeat;
+}
+
+.social-media-footer a.twitter:hover{
+	background: url(../img/social_media.png) -22px -22px no-repeat;
+}
+
+.social-media-footer a.facebook:hover{
+	background: url(../img/social_media.png) 0 -22px no-repeat;
+}
+
+/* Contact Form Footer */
+
+.contact-footer{
+	width: 60%;
+}
+
+.footer-form{
+	color: #fefefe;
+}
+
+.footer-form div{
+	margin: 1em 0;
+}
+
+.footer-form label{
+	display: block;
+	float: left;
+	width: 20%;
+	min-width: 72px;
+}
+
+.footer-form input[type="text"]{
+	width: 68%;
+	line-height: 1.6em;
+	font-size: 12px;
+	border-radius: 6px;
+	border: solid 2px #97aec3;
+	color: #333;
+}
+
+.footer-form textarea{
+	width: 68%;
+	height: 150px;
+	border-radius: 6px;
+	border: solid 2px #97aec3;
+	color: #333;
+	font-size: 12px;
+	resize: none;
+}
+
+.footer-form input[type="submit"]{
+	border: solid 2px #97aec3;
+	display: block;
+	padding: .5em 1em;
+	font-weight: bold;
+	color: #333;
+	float: right;
+	margin-right: 58px;
+}
+
+/* ROWS */
+
+.row4{
+	width: 30%;
+	margin: 0 1.5%;
+	float: left;
+}
+
+
+/* Arreglos Generales */
+
+img{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: .25em 0;
+}
+
+.clear:after{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}

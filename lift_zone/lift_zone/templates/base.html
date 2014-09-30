@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es-MX">
+    <head>
+        <meta charset="utf-8">
+        <title>Lift-Zone</title>
+        <!-- Hoja de estilo principal -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/main_style.css">
+        <!-- bxSlider CSS file -->
+        <link href="{{ STATIC_URL }}css/jquery.bxslider.css" rel="stylesheet" />
+        <!-- jQuery -->
+        <script src="{{ STATIC_URL }}js/vendor/jquery.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="{{ STATIC_URL }}js/vendor/jquery.bxslider.min.js"></script>
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <header class="main">
+            <div class="top-header">
+                <div class="container">
+                    <p class="telefono left">
+                        5519-3014
+                    </p>
+                    <ul class="social-media-header right">
+                        <li><a class="twitter" href="#">Twitter</a></li>
+                        <li><a class="facebook" href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <h1 class="logo left"><a href="#">Lift-Zone</a></h1>
+                    <nav class="main">
+                        <ul class="main-menu right">
+                            <li><a class="selected" href="#">Inicio</a></li>
+                            <li><a href="#">Tienda</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Galería</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER -->
+
+        <!-- CONTENIDO -->
+        <section class="main content">
+        {% block contenido %}
+        {% endblock %}
+        </section>
+        <!-- CONTENIDO -->
+
+        <!-- FOOTER -->
+        <footer class="main">
+            <div class="container clear">
+                <div class="main-footer right row4">
+                    <h3>Dirección</h3>
+                    <p>
+                        1600 Amphitheatre Parkway, Mountain View, CA 94043, United States
+                    </p>
+                    <h3>Telefonos</h3>
+                    <p>
+                        Tel: +52 (00) 319-3014
+                        <br>
+                        Fax: +52 (00) 319-3015
+                    </p>
+                    <h3>E-mail</h3>
+                    <p>contacto@lift-zone.mx</p>
+                    <ul class="social-media-footer clear">
+                        <li><a class="twitter" href="#">Twitter</a></li>
+                        <li><a class="facebook" href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="contact-footer left">
+                    <form class="footer-form" action="#" method="post">
+                        {% csrf_token %}
+                        {{ forma_contacto.as_p }}
+                        <p>
+                            <input type="submit" name="submit" value="Enviar">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+
+        <!-- SCRIPTS BOTTOM -->
+        <script>
+            $(document).ready(function(){
+                $('#slider').bxSlider();
+            });
+        </script>
+        <!-- SCRIPTS BOTTOM -->
+    </body>
+</html>

@@ -1,0 +1,4 @@
+
+*.pyc
+
+lift_zone/lift_zone/settings.py
